@@ -7,7 +7,8 @@
 import os
 import shutil
 import abjad
-from muda_score.segments import segment_01
+
+# from muda_score.segments import segment_01
 
 # Paths
 srcdir = "muda_score/segments"
@@ -23,20 +24,16 @@ for basename in os.listdir(srcdir):
         if os.path.isfile(pathname):
             shutil.copy2(pathname, dstdir)
 
-# score_illustration = abjad.LilyPondFile(
-#     items=[score], includes=["muda_score/stylesheet.ily"]
-# ).__illustrate__()
-# file_name = os.path.basename(__file__)
-# file_name = os.path.splitext(file_name)[0]
-# new_file_pdf = os.path.join(dstdir, "score.pdf")
+# Get the current working directory
+cwd = os.getcwd()
+# Change the current working directory
+os.chdir("./muda_score/score")
 
-# abjad.persist.as_pdf(score_illustration, pdf_file_path=new_file_pdf)  # PDF
-# abjad.io.open_file(new_file_pdf)
+# Print the current working directory
+print("Current working directory: {0}".format(os.getcwd()))
 
 # Runs LilyPond to compile the score
-score_ly = os.path.join(dstdir, "score.ly")
-os.system("lilypond --verbose " + score_ly)
+os.system("lilypond " + "score.ly")
 
 # Opens the PDF
-new_file_pdf = os.path.join(dstdir, "score.pdf")
-abjad.io.open_file(new_file_pdf)
+abjad.io.open_file("score.pdf")

@@ -11,16 +11,14 @@
         s1 * 1
         \time 5/4 %! muda.score.make_skips()
         s1 * 5/4
+        \time 5/4 %! muda.score.make_skips()
+        s1 * 5/4
+        \time 3/4 %! muda.score.make_skips()
+        s1 * 3/4
         \time 4/4 %! muda.score.make_skips()
         s1 * 1
-        \time 4/4 %! muda.score.make_skips()
-        s1 * 1
-        \time 4/4 %! muda.score.make_skips()
-        s1 * 1
-        \time 3/8 %! muda.score.make_skips()
-        s1 * 3/8
-        \time 3/8 %! muda.score.make_skips()
-        s1 * 3/8
+        \time 3/4 %! muda.score.make_skips()
+        s1 * 3/4
         \time 5/4 %! muda.score.make_skips()
         s1 * 5/4
         \time 5/4 %! muda.score.make_skips()
@@ -74,9 +72,7 @@
             fs'2 %! Mat_A
             r4 %! Mat_A
             g'8 %! Mat_A
-            bqf8
-            ~
-            bqf4
+            bqf4.
             ~
             bqf8
             r8
@@ -96,8 +92,7 @@
                 g'8 %! Mat_B
                 ] %! Mat_B
             } %! Mat_B
-            r4.
-            r4.
+            r2. %! Rests
             bqf2 %! Mat_A
             r4 %! Mat_A
             g'8 %! Mat_A
@@ -207,8 +202,7 @@
             r2
             r2 %! Mat_A
             bf4 %! Mat_A
-            r4
-            r4
+            r2 %! Mat_A
             bqf4 %! Mat_A
             r2 %! Mat_A
             \times 8/9 { %! Mat_B
@@ -224,8 +218,7 @@
                 bqf8 %! Mat_B
                 ] %! Mat_B
             } %! Mat_B
-            r4.
-            r4.
+            r2. %! Rests
             r2 %! Mat_A
             g'4 %! Mat_A
             r2 %! Mat_A
@@ -332,14 +325,14 @@
                 g'8 %! Mat_A
                 bqf8
                 ~
-                bqf4
-                ~
-                bqf8
+                bqf4.
                 g'8
                 ~
                 g'8
                 bf8 %! Mat_A
-                bqf2 %! Mat_A
+                bqf4
+                ~
+                bqf4
                 fs'4 %! Mat_A
                 g'8 %! Mat_A
                 bqf8 %! Mat_A
@@ -362,8 +355,7 @@
                     fs'16 %! Mat_B
                     r16 %! Mat_B
                 } %! Mat_B
-                r4.
-                r4.
+                r2. %! Rests
                 g'8 %! Mat_A
                 bqf8
                 ~
@@ -515,9 +507,7 @@
                 bqf8 %! Mat_A
                 g'8
                 ~
-                g'4
-                ~
-                g'4
+                g'2
                 bf2 %! Mat_A
                 ~
                 bf8 %! Mat_A
@@ -529,8 +519,7 @@
                     r4 %! Mat_B
                     bqf4 %! Mat_B
                 } %! Mat_B
-                r4.
-                r4.
+                r2. %! Rests
                 g'2 %! Mat_A
                 ~
                 g'8 %! Mat_A
@@ -612,7 +601,9 @@
             r2
             bqf2. %! Mat_A
             g'4 %! Mat_A
-            bf2 %! Mat_A
+            bf4
+            ~
+            bf4
             bqf2 %! Mat_A
             \times 8/9 { %! Mat_B
                 fs'8 %! Mat_B
@@ -622,8 +613,7 @@
                 bqf8 %! Mat_B
                 r4 %! Mat_B
             } %! Mat_B
-            r4.
-            r4.
+            r2. %! Rests
             g'2. %! Mat_A
             bf4 %! Mat_A
             bqf4
@@ -707,9 +697,7 @@
             r4
             r2
             bqf2. %! Mat_A
-            g'4
-            ~
-            g'4
+            g'2 %! Mat_A
             bf4 %! Mat_A
             bqf2 %! Mat_A
             \times 8/9 { %! Mat_B
@@ -719,8 +707,7 @@
                 r4. %! Mat_B
                 bqf8 %! Mat_B
             } %! Mat_B
-            r4.
-            r4.
+            r2. %! Rests
             g'2. %! Mat_A
             bf2 %! Mat_A
             bqf4 %! Mat_A
@@ -806,9 +793,7 @@
             bf8 %! Mat_A
             bqf8
             ~
-            bqf4
-            ~
-            bqf8
+            bqf4.
             fs'16 %! Mat_A
             g'16
             ~
@@ -827,8 +812,7 @@
                 g'8 %! Mat_B
                 r4. %! Mat_B
             } %! Mat_B
-            r4.
-            r4.
+            r2. %! Rests
             bqf8 %! Mat_A
             g'8
             ~
